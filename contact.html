@@ -2,6 +2,39 @@
 <html lang="en">
 <head>
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap" rel="stylesheet">
+     <style>
+      *{
+        font-family: 'Castoro Titling', cursive;
+      } 
+      label{
+        color: cadetblue;
+        font-size: x-large;
+      } 
+      input{
+        width: 400px;
+        height: 25px;
+        border-radius: 10px;
+        border: 1px solid burlywood;
+        color:cadetblue
+        text-transform: capitalize;
+      }
+      input[type="text"]{
+        text-transform: capitalize;
+      }
+      input[type="email"]{
+        color: chocolate;
+      }
+      #submit:hover{
+        background-color: burlywood;
+      }
+      button[type="reset"]:hover{
+        color: burlywood;
+      }
+    
+     </style>
 </head>
 <body>
     <h2>Contact Us</h2>
@@ -13,11 +46,11 @@
      <td><input type="text"autofocus required placeholder="Max character length=40" maxlength="40"></td>
     </tr>  
     <tr>
-     <td><label><b>Contact No</b></label></td>  
+     <td><label><b>Contact No:</b></label></td>  
      <td><input type="Number"</td> 
     </tr> 
     <tr>
-     <td><label><b>Email</b></label></td>   
+     <td><label><b>Email:</b></label></td>   
      <td><input type="email" required placeholder="ex-abc@gmail.com"></td>
     </tr>
     <tr>
@@ -25,7 +58,7 @@
      <td><textarea row="10" cols="40"></textarea></td>   
     </tr>
     <tr>
-     <td> <button type="submit">submit</button></td>  
+     <td> <button type="submit" id="submit">submit</button></td>  
      <td> <button type="reset">clear</button></td> 
     </tr>
     </tbody>
